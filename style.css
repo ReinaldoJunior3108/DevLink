@@ -32,7 +32,7 @@ body {
   background: #000000 var(--bg-url) top center/cover;
   height: 100%;
   transition: background 0.7s ease;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -111,7 +111,7 @@ ul {
   padding: 24px 0;
 }
 
-ul li a {
+ul li a{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +124,14 @@ ul li a {
   text-decoration: none;
   font-weight: 500;
   transition: background 0.2s ease;
+  animation: position 2s ease-in-out;
+}
+ul > p{
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
   animation: position 2s ease-in-out;
 }
 @keyframes position {
